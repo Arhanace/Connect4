@@ -1,4 +1,5 @@
 import java.util.*
+public class BoardPrinter{
  public void CreateBoard(){
         for (int w = 0; width > w; w += 1) {
             for (int h = 0; height > h; h += 1) {
@@ -16,4 +17,5 @@ import java.util.*
         }
         System.out.println();
     }
+}
 }
