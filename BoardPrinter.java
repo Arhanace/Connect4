@@ -1,10 +1,17 @@
-import java.util.*
+import java.util.*;
 public class BoardPrinter{
-	public boolean [][] array = new boolean [6][6];
-	public string board[][] = new string[6][6];
-	public boolean Red, Yellow;
-		Red = true;
-		Yellow = false;
+  public boolean [][] array = new boolean [6][6];
+  public String board[][] = new String[6][6];
+  public boolean Red, Yellow;
+  public int width, height;
+  
+  public BoardPrinter(){
+    Red = true;
+    Yellow = false;
+    width= 6;
+    height= 6;
+  }
+		
 	
 	public void CreateBoard(){
       for (int count=0; count<6; count++){
@@ -24,4 +31,4 @@ public class BoardPrinter{
         System.out.println();
     }
 }
-}
+
