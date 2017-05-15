@@ -1,20 +1,18 @@
 import java.util.*;
 public class BoardPrinter{
-  public boolean [][] array = new boolean [6][6];
-  public char board[][] = new char[6][6];
-  public boolean Red, Yellow;
+  public char board[][] = new char[7][6];
   public int width, height;
   
   public BoardPrinter(){
     Red = true;
     Yellow = false;
-    width= 6;
+    width= 7;
     height= 6;
   }
 		
 	
 	public void CreateBoard(){
-      for (int count=0; count<5; count++){
+      for (int count=0; count<6; count++){
     	 for (int count2=0; count2<5; count++){
     		 board[count][count2] = '*';
     	 }
