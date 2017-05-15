@@ -14,8 +14,8 @@ public class BoardPrinter{
 		
 	
 	public void CreateBoard(){
-      for (int count=0; count<6; count++){
-    	 for (int count2=0; count2<6; count++){
+      for (int count=0; count<5; count++){
+    	 for (int count2=0; count2<5; count++){
     		 board[count][count2] = "*";
     	 }
       }

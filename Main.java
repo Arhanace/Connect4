@@ -1,6 +1,7 @@
 import java.util.*;
-public static void Connect4(String[] args) {
-	Grid g = new Grid();
-	g.CreateBoard();
-	g.PrintBoard();
+class Main{
+	public static void main(String[] args) {
+		BoardPrinter g = new BoardPrinter();
+		g.CreateBoard();
+	}
 }
