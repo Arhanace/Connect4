@@ -1,7 +1,7 @@
 import java.util.*;
 public class BoardPrinter{
   public boolean [][] array = new boolean [6][6];
-  public String board[][] = new String[6][6];
+  public char board[][] = new char[6][6];
   public boolean Red, Yellow;
   public int width, height;
   
@@ -16,7 +16,7 @@ public class BoardPrinter{
 	public void CreateBoard(){
       for (int count=0; count<5; count++){
     	 for (int count2=0; count2<5; count++){
-    		 board[count][count2] = "*";
+    		 board[count][count2] = '*';
     	 }
       }
     }
