@@ -1,6 +1,8 @@
 import java.util.*;
-class Main{
+public class Main {
+
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		BoardPrinter g = new BoardPrinter();
 		Game s = new Game();
 		g.CreateBoard();
@@ -8,5 +10,7 @@ class Main{
 		
 		s.Player1();
 		s.Player2();
+
 	}
+
 }
