@@ -8,6 +8,7 @@ public class Main {
 		WinLose w = new WinLose();
 		g.CreateBoard();
 		g.PrintBoard();
+		g.Reprint();
 	
 		for (int count =0; count <100000; count ++){
 		s.Player1();
@@ -22,7 +23,6 @@ public class Main {
 			break;
 			break;
 			}
-
 	}
 	}
 

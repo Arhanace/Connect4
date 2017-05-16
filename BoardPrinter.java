@@ -20,6 +20,7 @@ public class BoardPrinter{
     	 }
       }
     }
+    
     public void PrintBoard(){
         //prints the board
         for (int w = 0; width > w; w++) {
@@ -29,6 +30,10 @@ public class BoardPrinter{
             System.out.println();
         }
         System.out.println();
+    }
+    
+    public void Reprint(){
+      
     }
 }
 
