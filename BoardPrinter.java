@@ -31,7 +31,11 @@ public class BoardPrinter {
     System.out.println();
   }
 
-  public void Reprint() {
+  public void Reprint(boolean[][] array) {
+    for (boolean[] s : array) {
+      for (boolean d : s) {
 
+      }
+    }
   }
 }

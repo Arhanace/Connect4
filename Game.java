@@ -2,7 +2,7 @@ import java.util.*;
 
 	public class Game {
 		public boolean[][] array = new boolean[7][6]; // array of type boolean: Red
-														// Disks are true, yellow
+											// Disks are true, yellow
 														// are false
 		public boolean Red, Yellow;
 		public int player1drop; // column chosen by player1
@@ -10,6 +10,7 @@ import java.util.*;
 		int x, y; // dummy variable used to loop or not loop do loop
 		Scanner reader = new Scanner(System.in); // Creates scanner so player's
 													// column can be read in
+		BoardPrinter b = new BoardPrinter();
 
 		public Game() {
 			Red = true; // disks of player 1 are true/red
@@ -66,5 +67,8 @@ import java.util.*;
 						
 				} while (y!=-1);
 			
+		}
+		public void sendboard(){
+			b.Reprint(array);
 		}
 	}

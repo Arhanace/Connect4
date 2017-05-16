@@ -7,23 +7,32 @@ public class Main {
 		BoardPrinter g = new BoardPrinter();
 		Game s = new Game();
 		WinLose w = new WinLose();
+		Scanner reader = new Scanner(System.in);
+		
+		String Player1, Player2;
+		System.out.println("Enter Player One's Name");
+		Player1 = reader.nextLine();
+		System.out.println("Enter Player Two's Name");
+		Player2 = reader.nextLine();
+		
 		g.CreateBoard();
 		g.PrintBoard();
 	
-		for (int count =0; count <100000; count ++){
+		for (int count =0; count <43; count ++){
 			s.Player1();
-			if (w.Winner?() = true){
-				w.PrintWinner();
-				break;
+			s.sendboard();
+			if (w.Winner() == true){
+				System.out.println(Player1 + " wins");
 				break;
 			}
+			
 			s.Player2();
-			if (w.Winner() = true){
-				w.PrintWinner();
-				break;
+			s.sendboard();
+			if (w.Winner() == true){
+				System.out.println(Player2 + " wins");
 				break;
 			}
-			g.Reprint();
+			
 		}
 	}
 
