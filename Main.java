@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -10,19 +11,19 @@ public class Main {
 		g.PrintBoard();
 	
 		for (int count =0; count <100000; count ++){
-		s.Player1();
-		if (w.Winner?() = true){
-		w.PrintWinner();
-		break;
-		break;
-		}
-		s.Player2();
-		if (w.Winner() = true){
-			w.PrintWinner();
-			break;
-			break;
+			s.Player1();
+			if (w.Winner?() = true){
+				w.PrintWinner();
+				break;
+				break;
 			}
-		g.Reprint();
+			s.Player2();
+			if (w.Winner() = true){
+				w.PrintWinner();
+				break;
+				break;
+			}
+			g.Reprint();
 		}
 	}
 
