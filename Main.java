@@ -6,7 +6,6 @@ public class Main {
 		// TODO Auto-generated method stub
 		BoardPrinter g = new BoardPrinter();
 		Game s = new Game();
-		WinLose w = new WinLose();
 		Scanner reader = new Scanner(System.in);
 
 		String Player1, Player2;// stores the names of each player
