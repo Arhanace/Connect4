@@ -1,5 +1,6 @@
 import java.util.*;
 
+
 public class BoardPrinter {
 
 	public static char board[][] = new char[7][6]; // creates an array of characters
@@ -53,7 +54,18 @@ public class BoardPrinter {
 		}
 		for (int h = 0; h < height; h++) {// prints out board with revised grid
 			for (int w = 0; w < width; w++) {
-				System.out.print(board[w][h] + "\t");
+				if (board[w][h]=='X'){
+					System.out.print("\033[31m");
+					System.out.print(board[w][h] + "\t");
+				}
+				else if (board[w][h]=='O'){
+					System.out.print("\033[33m");
+					System.out.print(board[w][h] + "\t");
+				}
+				else{
+					System.out.print("\033[0m");
+					System.out.print(board[w][h] + "\t");
+				}
 			}
 			System.out.println();
 		}

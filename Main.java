@@ -4,6 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		BoardPrinter g = new BoardPrinter();
 		Game s = new Game();
 		WinLose w = new WinLose();
@@ -14,9 +15,9 @@ public class Main {
 		Player2Sym = 'O';
 
 		String Player1, Player2;// stores the names of each player
-		System.out.println("Enter Player One's Name");
+		System.out.println("\033[31mEnter Player One's Name");
 		Player1 = reader.nextLine();
-		System.out.println("Enter Player Two's Name");
+		System.out.println("\033[33mEnter Player Two's Name");
 		Player2 = reader.nextLine();
 
 		int x = 0;// dummy variable used for checking for tie
@@ -30,6 +31,7 @@ public class Main {
 			s.Player1();
 			s.sendboard();
 			if (w.checkwinner(Player1Sym) == true) {// checks for winner
+				System.out.print("\033[31m");
 				System.out.println(Player1 + " wins!");
 				x = 1;
 				break;// breaks loop if there is a winner
@@ -38,6 +40,7 @@ public class Main {
 			s.Player2();
 			s.sendboard();
 			if (w.checkwinner(Player2Sym) == true) {// checks for winner
+				System.out.print("\033[33m");
 				System.out.println(Player2 + " wins!");
 				x = 1;
 				break; // breaks loop if there is a winner
