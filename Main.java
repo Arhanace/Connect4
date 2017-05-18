@@ -8,6 +8,10 @@ public class Main {
 		Game s = new Game();
 		WinLose w = new WinLose();
 		Scanner reader = new Scanner(System.in);
+		
+		char Player1Sym, Player2Sym; // stores the symbol of each player
+		Player1Sym = 'X';
+		Player2Sym = 'O';
 
 		String Player1, Player2;// stores the names of each player
 		System.out.println("Enter Player One's Name");
@@ -25,21 +29,21 @@ public class Main {
 													// winner
 			s.Player1();
 			s.sendboard();
-			if (w.checkwinnerPlayer1() == true) {// checks for winner
-				System.out.println(Player1 + " wins");
+			if (w.checkwinner(Player1Sym) == true) {// checks for winner
+				System.out.println(Player1 + " wins!");
 				x = 1;
 				break;// breaks loop if there is a winner
 			}
 
 			s.Player2();
 			s.sendboard();
-			if (w.checkwinnerPlayer2() == true) {// checks for winner
-				System.out.println(Player2 + " wins");
+			if (w.checkwinner(Player2Sym) == true) {// checks for winner
+				System.out.println(Player2 + " wins!");
 				x = 1;
 				break; // breaks loop if there is a winner
 			}
 		}
 		if (x == 0)
-			System.out.println("It is a tie");
+			System.out.println("It is a tie!");
 	}
 }
