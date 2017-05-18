@@ -16,7 +16,7 @@ public class Main {
 
 		int x = 0;// dummy variable used for checking for tie
 
-		g.CreateBoard();// creates board
+		g.CreateBoard();// creates4 board
 		g.PrintBoard();// prints board
 
 		for (int count = 0; count < 43; count++) {// runs through all possible
