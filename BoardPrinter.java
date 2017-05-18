@@ -43,7 +43,7 @@ public class BoardPrinter {
 			for (int count2 = 0; count2 < 6; count2++) {// checks for yellows
 														// then changes * to 0
 				if (array[count][count2] == Red) {
-					board[count][count2] = 'X';
+					board[count][count2] = '0';
 				} else if (array[count][count2] == Yellow) {// checks for
 															// yellows then
 															// changes * to 1
@@ -54,7 +54,7 @@ public class BoardPrinter {
 		}
 		for (int h = 0; h < height; h++) {// prints out board with revised grid
 			for (int w = 0; w < width; w++) {
-				if (board[w][h]=='X'){
+				if (board[w][h]=='0'){
 					System.out.print("\033[31m");
 					System.out.print(board[w][h] + "\t");
 				}

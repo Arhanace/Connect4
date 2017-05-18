@@ -11,7 +11,7 @@ public class Main {
 		Scanner reader = new Scanner(System.in);
 		
 		char Player1Sym, Player2Sym; // stores the symbol of each player
-		Player1Sym = 'X';
+		Player1Sym = '0';
 		Player2Sym = 'O';
 
 		String Player1, Player2;// stores the names of each player

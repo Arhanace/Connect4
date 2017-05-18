@@ -1,10 +1,11 @@
 public class WinLose {
+	//code taken from http://stackoverflow.com/questions/32770321/connect-4-check-for-a-win-algorithm
 	public boolean checkwinner(char player){
 
 		// horizontalCheck 
 		for (int j = 0; j<3 ; j++ ){
 			for (int i = 0; i<7; i++){
-				if (BoardPrinter.board[i][j] ==player && BoardPrinter.board[i][j+1]==player && BoardPrinter.board[i][j+2]==player && BoardPrinter.board[i][j+3]==player){
+				if (BoardPrinter.board[i][j]==player && BoardPrinter.board[i][j+1]==player && BoardPrinter.board[i][j+2]==player && BoardPrinter.board[i][j+3]==player){
 					return true;
 				}           
 			}
