@@ -6,6 +6,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		BoardPrinter g = new BoardPrinter();
 		Game s = new Game();
+		WinLose w = new WinLose();
 		Scanner reader = new Scanner(System.in);
 
 		String Player1, Player2;// stores the names of each player
@@ -16,7 +17,7 @@ public class Main {
 
 		int x = 0;// dummy variable used for checking for tie
 
-		g.CreateBoard();// creates4 board
+		g.CreateBoard();// creates board
 		g.PrintBoard();// prints board
 
 		for (int count = 0; count < 43; count++) {// runs through all possible
@@ -24,7 +25,7 @@ public class Main {
 													// winner
 			s.Player1();
 			s.sendboard();
-			if (g.checkwinnerPlayer1() == true) {// checks for winner
+			if (w.checkwinnerPlayer1() == true) {// checks for winner
 				System.out.println(Player1 + " wins");
 				x = 1;
 				break;// breaks loop if there is a winner
@@ -32,7 +33,7 @@ public class Main {
 
 			s.Player2();
 			s.sendboard();
-			if (g.checkwinnerPlayer2() == true) {// checks for winner
+			if (w.checkwinnerPlayer2() == true) {// checks for winner
 				System.out.println(Player2 + " wins");
 				x = 1;
 				break; // breaks loop if there is a winner
