@@ -36,7 +36,6 @@ public class BoardPrinter {
 	}
 
 	public void Reprint(int[][] array) {// reprints the board after each turn
-
 		for (int count = 0; count < 7; count++) {// changes * to either X or O
 													// based on player selection
 
