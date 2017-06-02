@@ -1,4 +1,3 @@
-
 import java.util.*;
 public class Main {
 
@@ -29,7 +28,7 @@ public class Main {
 													// turns unless there is a
 													// winner
 			s.Player1();
-			for (int z=5000; z>1; z--)System.out.print("\b");
+			for (int z=5000; z>1; z--)System.out.print("\b"); //clears screen
 			s.sendboard();
 			if (w.checkwinner(Player1Sym) == true) {// checks for winner
 				System.out.print("\033[31m");
@@ -39,6 +38,7 @@ public class Main {
 			}
 
 			s.Player2();
+			for (int z=5000; z>1; z--)System.out.print("\b"); //clears screen
 			s.sendboard();
 			if (w.checkwinner(Player2Sym) == true) {// checks for winner
 				System.out.print("\033[33m");

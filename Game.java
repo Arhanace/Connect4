@@ -69,7 +69,6 @@ public class Game {
 				y = 0;
 				System.out.println("Invalid Entry");
 			}
-
 			else if ((array[player2drop-1][0] == Red || array[player2drop-1][0] == Yellow) && 
 					(array[player2drop-1][1] == Red || array[player2drop-1][1] == Yellow) && 
 					(array[player2drop-1][2] == Red || array[player2drop-1][2] == Yellow) &&
@@ -77,11 +76,9 @@ public class Game {
 					(array[player2drop-1][4] == Red || array[player2drop-1][4] == Yellow) &&
 					(array[player2drop-1][5] == Red || array[player2drop-1][5] == Yellow) 
 					){ //checks to see if the column are filled
-										
 				y = 0;
 				System.out.println("Column is full");
 			}
-
 			else
 				y = -1;
 
@@ -95,9 +92,8 @@ public class Game {
 		}
 
 	}
-
+	
 	public void sendboard() {//sends array to reprint method
 		b.Reprint(array);
-		
 	}
 }
